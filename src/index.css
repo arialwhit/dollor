@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-cursive {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.font-playful {
+  font-family: 'Dancing Script', cursive;
+}
+
+.glitter-text {
+  background: linear-gradient(
+    to right, 
+    #ff69b4 20%, 
+    #ffb6c1 30%, 
+    #ffd700 70%, 
+    #ff1493 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+.hover-girlish {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-girlish:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(255, 20, 147, 0.4);
+  filter: brightness(1.05);
+}
+
+.focus-girlish {
+  transition: all 0.3s ease-in-out;
+}
+
+.focus-girlish:focus {
+  transform: scale(1.015);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.25);
+  border-color: #ff69b4 !important;
+  padding-left: 1rem;
+}
+
+.glass-pink {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid rgba(255, 182, 193, 0.3);
+}
+
+@keyframes float-heart {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+.animate-float-heart {
+  animation: float-heart 4s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF5F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFB6C1;
+  border-radius: 10px;
+}
