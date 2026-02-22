@@ -20,7 +20,7 @@ const TrendInspiration: React.FC = () => {
     <div className="container mx-auto px-6 py-24 flex justify-center">
       <div className="flex flex-col items-center">
         <div className="w-16 h-16 border-4 border-pink-100 border-t-pink-500 rounded-full animate-spin"></div>
-        <p className="mt-4 font-playful text-pink-400 text-xl">Analyzing Trends ✨</p>
+        <p className="mt-4 font-playful text-pink-400 text-xl">Loading trends...</p>
       </div>
     </div>
   );

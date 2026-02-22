@@ -32,6 +32,7 @@ const Home: React.FC = () => (
 );
 
 const App: React.FC = () => {
+  console.log('🎨 App component is rendering...');
   return (
     <Router>
       <ScrollToTop />
